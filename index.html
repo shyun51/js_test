@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스네이크 게임</title>
+    <link rel="stylesheet" href="snake22.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="info">
+            <div id="score">점수: 0</div>
+            <div id="highScore">최고 점수: 0</div>
+            <div id="speed">속도: 1</div>
+        </div>
+        <div class="controls">
+            <button id="speedUpButton">속도 증가</button>
+            <button id="speedDownButton">속도 감소</button>
+            <button id="restartButton">재시작</button>
+            <button id="exitButton">종료</button>
+        </div>
+        <div id="message" class="message"></dv>
+        <div id="exitScreen" class="exit-screen">
+            <div class="exit-message">게임을 종료합니다</div>
+            <button onclick="location.replace(location.href)">다시 시작</button>
+        </div>
+    </div>
+    <script src="snake22.js"></script>
+</body>
+</html>

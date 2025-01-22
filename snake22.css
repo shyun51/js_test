@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #acaaab 15%, #464646 85%);
+}
+
+.game-container {
+    text-align: center;
+    background: linear-gradient(135deg, rgb(1, 21, 1) 85%, rgb(1,0,1) 15%);
+    border: 5px solid #0b3b11;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 10px solid #3bfa14;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #40473e;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.info div {
+    background: linear-gradient(135deg , blue 77%, #130b82 22%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgb(31, 250, 32) 77%, rgb(31, 134, 32));
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.controls button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.message {
+    display: none;
+    margin-top: 20px;
+    color: green;
+    font-size: 18px;
+}
+
+.exit-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+.exit-screen .exit-message {
+    margin-bottom: 20px;
+}
+
+.exit-screen button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.exit-screen button:hover {
+    background-color: #c82333;
+}
